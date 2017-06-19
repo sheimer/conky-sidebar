@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ENV{ID_MODEL_ID}=="2513", ENV{ID_VENDOR_ID}=="413c" RUN+="/etc/dell/dock.sh $env{ACTION} test"
+

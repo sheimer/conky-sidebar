@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="wi_owm_200" iconname="thunderstorm" owmcnd="thunderstorm with light rain"></string>
+  <string name="wi_owm_201" iconname="thunderstorm" owmcnd="thunderstorm with rain"></string>
+  <string name="wi_owm_202" iconname="thunderstorm" owmcnd="thunderstorm with heavy rain"></string>
+  <string name="wi_owm_210" iconname="lightning" owmcnd="light thunderstorm"></string>
+  <string name="wi_owm_211" iconname="lightning" owmcnd="thunderstorm"></string>
+  <string name="wi_owm_212" iconname="lightning" owmcnd="heavy thunderstorm"></string>
+  <string name="wi_owm_221" iconname="lightning" owmcnd="ragged thunderstorm"></string>
+  <string name="wi_owm_230" iconname="thunderstorm" owmcnd="thunderstorm with light drizzle"></string>
+  <string name="wi_owm_231" iconname="thunderstorm" owmcnd="thunderstorm with drizzle"></string>
+  <string name="wi_owm_232" iconname="thunderstorm" owmcnd="thunderstorm with heavy drizzle"></string>
+  <string name="wi_owm_300" iconname="sprinkle" owmcnd="light intensity drizzle"></string>
+  <string name="wi_owm_301" iconname="sprinkle" owmcnd="drizzle"></string>
+  <string name="wi_owm_302" iconname="rain" owmcnd="heavy intensity drizzle"></string>
+  <string name="wi_owm_310" iconname="rain-mix" owmcnd="light intensity drizzle rain"></string>
+  <string name="wi_owm_311" iconname="rain" owmcnd="drizzle rain"></string>
+  <string name="wi_owm_312" iconname="rain" owmcnd="heavy intensity drizzle rain"></string>
+  <string name="wi_owm_313" iconname="showers" owmcnd="shower rain and drizzle"></string>
+  <string name="wi_owm_314" iconname="rain" owmcnd="heavy shower rain and drizzle"></string>
+  <string name="wi_owm_321" iconname="sprinkle" owmcnd="shower drizzle"></string>
+  <string name="wi_owm_500" iconname="sprinkle" owmcnd="light rain"></string>
+  <string name="wi_owm_501" iconname="rain" owmcnd="moderate rain"></string>
+  <string name="wi_owm_502" iconname="rain" owmcnd="heavy intensity rain"></string>
+  <string name="wi_owm_503" iconname="rain" owmcnd="very heavy rain"></string>
+  <string name="wi_owm_504" iconname="rain" owmcnd="extreme rain"></string>
+  <string name="wi_owm_511" iconname="rain-mix" owmcnd="freezing rain"></string>
+  <string name="wi_owm_520" iconname="showers" owmcnd="light intensity shower rain"></string>
+  <string name="wi_owm_521" iconname="showers" owmcnd="shower rain"></string>
+  <string name="wi_owm_522" iconname="showers" owmcnd="heavy intensity shower rain"></string>
+  <string name="wi_owm_531" iconname="storm-showers" owmcnd="ragged shower rain"></string>
+  <string name="wi_owm_600" iconname="snow" owmcnd="light snowflake"></string>
+  <string name="wi_owm_601" iconname="snow" owmcnd="snow"></string>
+  <string name="wi_owm_602" iconname="sleet" owmcnd="heavy snowflake"></string>
+  <string name="wi_owm_611" iconname="rain-mix" owmcnd="sleet"></string>
+  <string name="wi_owm_612" iconname="rain-mix" owmcnd="shower sleet"></string>
+  <string name="wi_owm_615" iconname="rain-mix" owmcnd="light rain and snowflake"></string>
+  <string name="wi_owm_616" iconname="rain-mix" owmcnd="rain and snowflake"></string>
+  <string name="wi_owm_620" iconname="rain-mix" owmcnd="light shower snowflake"></string>
+  <string name="wi_owm_621" iconname="snow" owmcnd="shower snowflake"></string>
+  <string name="wi_owm_622" iconname="snow" owmcnd="heavy shower snowflake"></string>
+  <string name="wi_owm_701" iconname="fog" owmcnd="mist"></string>
+  <string name="wi_owm_711" iconname="smoke" owmcnd="smoke"></string>
+  <string name="wi_owm_721" iconname="day-haze" owmcnd="haze"></string>
+  <string name="wi_owm_731" iconname="dust" owmcnd="sand, dust whirls"></string>
+  <string name="wi_owm_741" iconname="fog" owmcnd="fog"></string>
+  <string name="wi_owm_761" iconname="dust" owmcnd="dust"></string>
+  <string name="wi_owm_762" iconname="dust" owmcnd="volcanic ash"></string>
+  <string name="wi_owm_771" iconname="cloudy-gusts" owmcnd="squalls"></string>
+  <string name="wi_owm_781" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_800" iconname="day-sunny" owmcnd="clear sky"></string>
+  <string name="wi_owm_801" iconname="cloud" owmcnd="few clouds"></string>
+  <string name="wi_owm_802" iconname="cloudy" owmcnd="scattered clouds"></string>
+  <string name="wi_owm_803" iconname="cloudy" owmcnd="broken clouds"></string>
+  <string name="wi_owm_804" iconname="cloudy" owmcnd="overcast clouds"></string>
+  <string name="wi_owm_900" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_901" iconname="storm-showers" owmcnd="tropical storm"></string>
+  <string name="wi_owm_902" iconname="hurricane" owmcnd="hurricane"></string>
+  <string name="wi_owm_903" iconname="snowflake-cold" owmcnd="cold"></string>
+  <string name="wi_owm_904" iconname="hot" owmcnd="hot"></string>
+  <string name="wi_owm_905" iconname="windy" owmcnd="windy"></string>
+  <string name="wi_owm_906" iconname="hail" owmcnd="hail"></string>
+  <string name="wi_owm_957" iconname="strong-wind" owmcnd="high wind, near gale"></string>
+  <string name="wi_owm_day_200" iconname="day-thunderstorm" owmcnd="thunderstorm with light rain"></string>
+  <string name="wi_owm_day_201" iconname="day-thunderstorm" owmcnd="thunderstorm with rain"></string>
+  <string name="wi_owm_day_202" iconname="day-thunderstorm" owmcnd="thunderstorm with heavy rain"></string>
+  <string name="wi_owm_day_210" iconname="day-lightning" owmcnd="light thunderstorm"></string>
+  <string name="wi_owm_day_211" iconname="day-lightning" owmcnd="thunderstorm"></string>
+  <string name="wi_owm_day_212" iconname="day-lightning" owmcnd="heavy thunderstorm"></string>
+  <string name="wi_owm_day_221" iconname="day-lightning" owmcnd="ragged thunderstorm"></string>
+  <string name="wi_owm_day_230" iconname="day-thunderstorm" owmcnd="thunderstorm with light drizzle"></string>
+  <string name="wi_owm_day_231" iconname="day-thunderstorm" owmcnd="thunderstorm with drizzle"></string>
+  <string name="wi_owm_day_232" iconname="day-thunderstorm" owmcnd="thunderstorm with heavy drizzle"></string>
+  <string name="wi_owm_day_300" iconname="day-sprinkle" owmcnd="light intensity drizzle"></string>
+  <string name="wi_owm_day_301" iconname="day-sprinkle" owmcnd="drizzle"></string>
+  <string name="wi_owm_day_302" iconname="day-rain" owmcnd="heavy intensity drizzle"></string>
+  <string name="wi_owm_day_310" iconname="day-rain" owmcnd="light intensity drizzle rain"></string>
+  <string name="wi_owm_day_311" iconname="day-rain" owmcnd="drizzle rain"></string>
+  <string name="wi_owm_day_312" iconname="day-rain" owmcnd="heavy intensity drizzle rain"></string>
+  <string name="wi_owm_day_313" iconname="day-rain" owmcnd="shower rain and drizzle"></string>
+  <string name="wi_owm_day_314" iconname="day-rain" owmcnd="heavy shower rain and drizzle"></string>
+  <string name="wi_owm_day_321" iconname="day-sprinkle" owmcnd="shower drizzle"></string>
+  <string name="wi_owm_day_500" iconname="day-sprinkle" owmcnd="light rain"></string>
+  <string name="wi_owm_day_501" iconname="day-rain" owmcnd="moderate rain"></string>
+  <string name="wi_owm_day_502" iconname="day-rain" owmcnd="heavy intensity rain"></string>
+  <string name="wi_owm_day_503" iconname="day-rain" owmcnd="very heavy rain"></string>
+  <string name="wi_owm_day_504" iconname="day-rain" owmcnd="extreme rain"></string>
+  <string name="wi_owm_day_511" iconname="day-rain-mix" owmcnd="freezing rain"></string>
+  <string name="wi_owm_day_520" iconname="day-showers" owmcnd="light intensity shower rain"></string>
+  <string name="wi_owm_day_521" iconname="day-showers" owmcnd="shower rain"></string>
+  <string name="wi_owm_day_522" iconname="day-showers" owmcnd="heavy intensity shower rain"></string>
+  <string name="wi_owm_day_531" iconname="day-storm-showers" owmcnd="ragged shower rain"></string>
+  <string name="wi_owm_day_600" iconname="day-snow" owmcnd="light snowflake"></string>
+  <string name="wi_owm_day_601" iconname="day-sleet" owmcnd="snow"></string>
+  <string name="wi_owm_day_602" iconname="day-snow" owmcnd="heavy snowflake"></string>
+  <string name="wi_owm_day_611" iconname="day-rain-mix" owmcnd="sleet"></string>
+  <string name="wi_owm_day_612" iconname="day-rain-mix" owmcnd="shower sleet"></string>
+  <string name="wi_owm_day_615" iconname="day-rain-mix" owmcnd="light rain and snowflake"></string>
+  <string name="wi_owm_day_616" iconname="day-rain-mix" owmcnd="rain and snowflake"></string>
+  <string name="wi_owm_day_620" iconname="day-rain-mix" owmcnd="light shower snowflake"></string>
+  <string name="wi_owm_day_621" iconname="day-snow" owmcnd="shower snowflake"></string>
+  <string name="wi_owm_day_622" iconname="day-snow" owmcnd="heavy shower snowflake"></string>
+  <string name="wi_owm_day_701" iconname="day-fog" owmcnd="mist"></string>
+  <string name="wi_owm_day_711" iconname="smoke" owmcnd="smoke"></string>
+  <string name="wi_owm_day_721" iconname="day-haze" owmcnd="haze"></string>
+  <string name="wi_owm_day_731" iconname="dust" owmcnd="sand, dust whirls"></string>
+  <string name="wi_owm_day_741" iconname="day-fog" owmcnd="fog"></string>
+  <string name="wi_owm_day_761" iconname="dust" owmcnd="dust"></string>
+  <string name="wi_owm_day_762" iconname="dust" owmcnd="volcanic ash"></string>
+  <string name="wi_owm_day_771" iconname="n/a" owmcnd="squalls"></string>
+  <string name="wi_owm_day_781" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_day_800" iconname="day-sunny" owmcnd="clear sky"></string>
+  <string name="wi_owm_day_801" iconname="day-cloudy" owmcnd="few clouds"></string>
+  <string name="wi_owm_day_802" iconname="day-cloudy" owmcnd="scattered clouds"></string>
+  <string name="wi_owm_day_803" iconname="day-cloudy" owmcnd="broken clouds"></string>
+  <string name="wi_owm_day_804" iconname="day-sunny-overcast" owmcnd="overcast clouds"></string>
+  <string name="wi_owm_day_900" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_day_901" iconname="n/a" owmcnd="tropical storm"></string>
+  <string name="wi_owm_day_902" iconname="hurricane" owmcnd="hurricane"></string>
+  <string name="wi_owm_day_903" iconname="snowflake-cold" owmcnd="cold"></string>
+  <string name="wi_owm_day_904" iconname="hot" owmcnd="hot"></string>
+  <string name="wi_owm_day_905" iconname="n/a" owmcnd="windy"></string>
+  <string name="wi_owm_day_906" iconname="day-hail" owmcnd="hail"></string>
+  <string name="wi_owm_day_957" iconname="strong-wind" owmcnd="high wind, near gale"></string>
+  <string name="wi_owm_night_200" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with light rain"></string>
+  <string name="wi_owm_night_201" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with rain"></string>
+  <string name="wi_owm_night_202" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with heavy rain"></string>
+  <string name="wi_owm_night_210" iconname="night-alt-lightning" owmcnd="light thunderstorm"></string>
+  <string name="wi_owm_night_211" iconname="night-alt-lightning" owmcnd="thunderstorm"></string>
+  <string name="wi_owm_night_212" iconname="night-alt-lightning" owmcnd="heavy thunderstorm"></string>
+  <string name="wi_owm_night_221" iconname="night-alt-lightning" owmcnd="ragged thunderstorm"></string>
+  <string name="wi_owm_night_230" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with light drizzle"></string>
+  <string name="wi_owm_night_231" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with drizzle"></string>
+  <string name="wi_owm_night_232" iconname="night-alt-thunderstorm" owmcnd="thunderstorm with heavy drizzle"></string>
+  <string name="wi_owm_night_300" iconname="night-alt-sprinkle" owmcnd="light intensity drizzle"></string>
+  <string name="wi_owm_night_301" iconname="night-alt-sprinkle" owmcnd="drizzle"></string>
+  <string name="wi_owm_night_302" iconname="night-alt-rain" owmcnd="heavy intensity drizzle"></string>
+  <string name="wi_owm_night_310" iconname="night-alt-rain" owmcnd="light intensity drizzle rain"></string>
+  <string name="wi_owm_night_311" iconname="night-alt-rain" owmcnd="drizzle rain"></string>
+  <string name="wi_owm_night_312" iconname="night-alt-rain" owmcnd="heavy intensity drizzle rain"></string>
+  <string name="wi_owm_night_313" iconname="night-alt-rain" owmcnd="shower rain and drizzle"></string>
+  <string name="wi_owm_night_314" iconname="night-alt-rain" owmcnd="heavy shower rain and drizzle"></string>
+  <string name="wi_owm_night_321" iconname="night-alt-sprinkle" owmcnd="shower drizzle"></string>
+  <string name="wi_owm_night_500" iconname="night-alt-sprinkle" owmcnd="light rain"></string>
+  <string name="wi_owm_night_501" iconname="night-alt-rain" owmcnd="moderate rain"></string>
+  <string name="wi_owm_night_502" iconname="night-alt-rain" owmcnd="heavy intensity rain"></string>
+  <string name="wi_owm_night_503" iconname="night-alt-rain" owmcnd="very heavy rain"></string>
+  <string name="wi_owm_night_504" iconname="night-alt-rain" owmcnd="extreme rain"></string>
+  <string name="wi_owm_night_511" iconname="night-alt-rain-mix" owmcnd="freezing rain"></string>
+  <string name="wi_owm_night_520" iconname="night-alt-showers" owmcnd="light intensity shower rain"></string>
+  <string name="wi_owm_night_521" iconname="night-alt-showers" owmcnd="shower rain"></string>
+  <string name="wi_owm_night_522" iconname="night-alt-showers" owmcnd="heavy intensity shower rain"></string>
+  <string name="wi_owm_night_531" iconname="night-alt-storm-showers" owmcnd="ragged shower rain"></string>
+  <string name="wi_owm_night_600" iconname="night-alt-snow" owmcnd="light snowflake"></string>
+  <string name="wi_owm_night_601" iconname="night-alt-sleet" owmcnd="snow"></string>
+  <string name="wi_owm_night_602" iconname="night-alt-snow" owmcnd="heavy snowflake"></string>
+  <string name="wi_owm_night_611" iconname="night-alt-rain-mix" owmcnd="sleet"></string>
+  <string name="wi_owm_night_612" iconname="night-alt-rain-mix" owmcnd="shower sleet"></string>
+  <string name="wi_owm_night_615" iconname="night-alt-rain-mix" owmcnd="light rain and snowflake"></string>
+  <string name="wi_owm_night_616" iconname="night-alt-rain-mix" owmcnd="rain and snowflake"></string>
+  <string name="wi_owm_night_620" iconname="night-alt-rain-mix" owmcnd="light shower snowflake"></string>
+  <string name="wi_owm_night_621" iconname="night-alt-snow" owmcnd="shower snowflake"></string>
+  <string name="wi_owm_night_622" iconname="night-alt-snow" owmcnd="heavy shower snowflake"></string>
+  <string name="wi_owm_night_701" iconname="night-fog" owmcnd="mist"></string>
+  <string name="wi_owm_night_711" iconname="smoke" owmcnd="smoke"></string>
+  <string name="wi_owm_night_721" iconname="day-haze" owmcnd="haze"></string>
+  <string name="wi_owm_night_731" iconname="dust" owmcnd="sand, dust whirls"></string>
+  <string name="wi_owm_night_741" iconname="night-fog" owmcnd="fog"></string>
+  <string name="wi_owm_night_761" iconname="dust" owmcnd="dust"></string>
+  <string name="wi_owm_night_762" iconname="dust" owmcnd="volcanic ash"></string>
+  <string name="wi_owm_night_771" iconname="n/a" owmcnd="squalls"></string>
+  <string name="wi_owm_night_781" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_night_800" iconname="night-clear" owmcnd="clear sky"></string>
+  <string name="wi_owm_night_801" iconname="night-alt-partly-cloudy" owmcnd="few clouds"></string>
+  <string name="wi_owm_night_802" iconname="night-alt-cloudy" owmcnd="scattered clouds"></string>
+  <string name="wi_owm_night_803" iconname="night-alt-cloudy" owmcnd="broken clouds"></string>
+  <string name="wi_owm_night_804" iconname="night-alt-cloudy" owmcnd="overcast clouds"></string>
+  <string name="wi_owm_night_900" iconname="tornado" owmcnd="tornado"></string>
+  <string name="wi_owm_night_901" iconname="n/a" owmcnd="tropical storm"></string>
+  <string name="wi_owm_night_902" iconname="hurricane" owmcnd="hurricane"></string>
+  <string name="wi_owm_night_903" iconname="snowflake-cold" owmcnd="cold"></string>
+  <string name="wi_owm_night_904" iconname="hot" owmcnd="hot"></string>
+  <string name="wi_owm_night_905" iconname="n/a" owmcnd="windy"></string>
+  <string name="wi_owm_night_906" iconname="night-alt-hail" owmcnd="hail"></string>
+  <string name="wi_owm_night_957" iconname="strong-wind" owmcnd="high wind, near gale"></string>
+  <string name="wi_day_sunny" iconname="n/a"></string>
+  <string name="wi_day_cloudy" iconname="n/a"></string>
+  <string name="wi_day_cloudy_gusts" iconname="n/a"></string>
+  <string name="wi_day_cloudy_windy" iconname="n/a"></string>
+  <string name="wi_day_fog" iconname="n/a"></string>
+  <string name="wi_day_hail" iconname="n/a"></string>
+  <string name="wi_day_haze" iconname="n/a"></string>
+  <string name="wi_day_lightning" iconname="n/a"></string>
+  <string name="wi_day_rain" iconname="n/a"></string>
+  <string name="wi_day_rain_mix" iconname="n/a"></string>
+  <string name="wi_day_rain_wind" iconname="n/a"></string>
+  <string name="wi_day_showers" iconname="n/a"></string>
+  <string name="wi_day_sleet" iconname="n/a"></string>
+  <string name="wi_day_sleet_storm" iconname="n/a"></string>
+  <string name="wi_day_snow" iconname="n/a"></string>
+  <string name="wi_day_snow_thunderstorm" iconname="n/a"></string>
+  <string name="wi_day_snow_wind" iconname="n/a"></string>
+  <string name="wi_day_sprinkle" iconname="n/a"></string>
+  <string name="wi_day_storm_showers" iconname="n/a"></string>
+  <string name="wi_day_sunny_overcast" iconname="n/a"></string>
+  <string name="wi_day_thunderstorm" iconname="n/a"></string>
+  <string name="wi_day_windy" iconname="n/a"></string>
+  <string name="wi_solar_eclipse" iconname="n/a"></string>
+  <string name="wi_hot" iconname="n/a"></string>
+  <string name="wi_day_cloudy_high" iconname="n/a"></string>
+  <string name="wi_day_light_wind" iconname="n/a"></string>
+  <string name="wi_night_clear" iconname="n/a"></string>
+  <string name="wi_night_alt_cloudy" iconname="n/a"></string>
+  <string name="wi_night_alt_cloudy_gusts" iconname="n/a"></string>
+  <string name="wi_night_alt_cloudy_windy" iconname="n/a"></string>
+  <string name="wi_night_alt_hail" iconname="n/a"></string>
+  <string name="wi_night_alt_lightning" iconname="n/a"></string>
+  <string name="wi_night_alt_rain" iconname="n/a"></string>
+  <string name="wi_night_alt_rain_mix" iconname="n/a"></string>
+  <string name="wi_night_alt_rain_wind" iconname="n/a"></string>
+  <string name="wi_night_alt_showers" iconname="n/a"></string>
+  <string name="wi_night_alt_sleet" iconname="n/a"></string>
+  <string name="wi_night_alt_sleet_storm" iconname="n/a"></string>
+  <string name="wi_night_alt_snow" iconname="n/a"></string>
+  <string name="wi_night_alt_snow_thunderstorm" iconname="n/a"></string>
+  <string name="wi_night_alt_snow_wind" iconname="n/a"></string>
+  <string name="wi_night_alt_sprinkle" iconname="n/a"></string>
+  <string name="wi_night_alt_storm_showers" iconname="n/a"></string>
+  <string name="wi_night_alt_thunderstorm" iconname="n/a"></string>
+  <string name="wi_night_cloudy" iconname="n/a"></string>
+  <string name="wi_night_cloudy_gusts" iconname="n/a"></string>
+  <string name="wi_night_cloudy_windy" iconname="n/a"></string>
+  <string name="wi_night_fog" iconname="n/a"></string>
+  <string name="wi_night_hail" iconname="n/a"></string>
+  <string name="wi_night_lightning" iconname="n/a"></string>
+  <string name="wi_night_partly_cloudy" iconname="n/a"></string>
+  <string name="wi_night_rain" iconname="n/a"></string>
+  <string name="wi_night_rain_mix" iconname="n/a"></string>
+  <string name="wi_night_rain_wind" iconname="n/a"></string>
+  <string name="wi_night_showers" iconname="n/a"></string>
+  <string name="wi_night_sleet" iconname="n/a"></string>
+  <string name="wi_night_sleet_storm" iconname="n/a"></string>
+  <string name="wi_night_snow" iconname="n/a"></string>
+  <string name="wi_night_snow_thunderstorm" iconname="n/a"></string>
+  <string name="wi_night_snow_wind" iconname="n/a"></string>
+  <string name="wi_night_sprinkle" iconname="n/a"></string>
+  <string name="wi_night_storm_showers" iconname="n/a"></string>
+  <string name="wi_night_thunderstorm" iconname="n/a"></string>
+  <string name="wi_lunar_eclipse" iconname="n/a"></string>
+  <string name="wi_stars" iconname="n/a"></string>
+  <string name="wi_storm_showers" iconname="n/a"></string>
+  <string name="wi_thunderstorm" iconname="n/a"></string>
+  <string name="wi_night_alt_cloudy_high" iconname="n/a"></string>
+  <string name="wi_night_cloudy_high" iconname="n/a"></string>
+  <string name="wi_night_alt_partly_cloudy" iconname="n/a"></string>
+  <string name="wi_cloud" iconname="n/a"></string>
+  <string name="wi_cloudy" iconname="n/a"></string>
+  <string name="wi_cloudy_gusts" iconname="n/a"></string>
+  <string name="wi_cloudy_windy" iconname="n/a"></string>
+  <string name="wi_fog" iconname="n/a"></string>
+  <string name="wi_hail" iconname="n/a"></string>
+  <string name="wi_rain" iconname="n/a"></string>
+  <string name="wi_rain_mix" iconname="n/a"></string>
+  <string name="wi_rain_wind" iconname="n/a"></string>
+  <string name="wi_showers" iconname="n/a"></string>
+  <string name="wi_sleet" iconname="n/a"></string>
+  <string name="wi_snow" iconname="n/a"></string>
+  <string name="wi_sprinkle" iconname="n/a"></string>
+  <string name="wi_snow_wind" iconname="n/a"></string>
+  <string name="wi_smog" iconname="n/a"></string>
+  <string name="wi_smoke" iconname="n/a"></string>
+  <string name="wi_lightning" iconname="n/a"></string>
+  <string name="wi_raindrops" iconname="n/a"></string>
+  <string name="wi_raindrop" iconname="n/a"></string>
+  <string name="wi_dust" iconname="n/a"></string>
+  <string name="wi_snowflake_cold" iconname="n/a"></string>
+  <string name="wi_windy" iconname="n/a"></string>
+  <string name="wi_strong_wind" iconname="n/a"></string>
+  <string name="wi_sandstorm" iconname="n/a"></string>
+  <string name="wi_earthquake" iconname="n/a"></string>
+  <string name="wi_fire" iconname="n/a"></string>
+  <string name="wi_flood" iconname="n/a"></string>
+  <string name="wi_meteor" iconname="n/a"></string>
+  <string name="wi_tsunami" iconname="n/a"></string>
+  <string name="wi_volcano" iconname="n/a"></string>
+  <string name="wi_hurricane" iconname="n/a"></string>
+  <string name="wi_tornado" iconname="n/a"></string>
+  <string name="wi_small_craft_advisory" iconname="n/a"></string>
+  <string name="wi_gale_warning" iconname="n/a"></string>
+  <string name="wi_storm_warning" iconname="n/a"></string>
+  <string name="wi_hurricane_warning" iconname="n/a"></string>
+  <string name="wi_wind_direction" iconname="n/a"></string>
+  <string name="wi_alien" iconname="n/a"></string>
+  <string name="wi_celsius" iconname="n/a"></string>
+  <string name="wi_fahrenheit" iconname="n/a"></string>
+  <string name="wi_degrees" iconname="n/a"></string>
+  <string name="wi_thermometer" iconname="n/a"></string>
+  <string name="wi_thermometer_exterior" iconname="n/a"></string>
+  <string name="wi_thermometer_internal" iconname="n/a"></string>
+  <string name="wi_cloud_down" iconname="n/a"></string>
+  <string name="wi_cloud_up" iconname="n/a"></string>
+  <string name="wi_cloud_refresh" iconname="n/a"></string>
+  <string name="wi_horizon" iconname="n/a"></string>
+  <string name="wi_horizon_alt" iconname="n/a"></string>
+  <string name="wi_sunrise" iconname="n/a"></string>
+  <string name="wi_sunset" iconname="n/a"></string>
+  <string name="wi_moonrise" iconname="n/a"></string>
+  <string name="wi_moonset" iconname="n/a"></string>
+  <string name="wi_refresh" iconname="n/a"></string>
+  <string name="wi_refresh_alt" iconname="n/a"></string>
+  <string name="wi_umbrella" iconname="n/a"></string>
+  <string name="wi_barometer" iconname="n/a"></string>
+  <string name="wi_humidity" iconname="n/a"></string>
+  <string name="wi_na" iconname="n/a"></string>
+  <string name="wi_train" iconname="n/a"></string>
+  <string name="wi_moon_new" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_1" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_2" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_3" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_4" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_5" iconname="n/a"></string>
+  <string name="wi_moon_waxing_crescent_6" iconname="n/a"></string>
+  <string name="wi_moon_first_quarter" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_1" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_2" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_3" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_4" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_5" iconname="n/a"></string>
+  <string name="wi_moon_waxing_gibbous_6" iconname="n/a"></string>
+  <string name="wi_moon_full" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_1" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_2" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_3" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_4" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_5" iconname="n/a"></string>
+  <string name="wi_moon_waning_gibbous_6" iconname="n/a"></string>
+  <string name="wi_moon_third_quarter" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_1" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_2" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_3" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_4" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_5" iconname="n/a"></string>
+  <string name="wi_moon_waning_crescent_6" iconname="n/a"></string>
+  <string name="wi_moon_alt_new" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_1" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_2" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_3" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_4" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_5" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_crescent_6" iconname="n/a"></string>
+  <string name="wi_moon_alt_first_quarter" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_1" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_2" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_3" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_4" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_5" iconname="n/a"></string>
+  <string name="wi_moon_alt_waxing_gibbous_6" iconname="n/a"></string>
+  <string name="wi_moon_alt_full" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_1" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_2" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_3" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_4" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_5" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_gibbous_6" iconname="n/a"></string>
+  <string name="wi_moon_alt_third_quarter" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_1" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_2" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_3" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_4" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_5" iconname="n/a"></string>
+  <string name="wi_moon_alt_waning_crescent_6" iconname="n/a"></string>
+  <string name="wi_moon_0" iconname="n/a"></string>
+  <string name="wi_moon_1" iconname="n/a"></string>
+  <string name="wi_moon_2" iconname="n/a"></string>
+  <string name="wi_moon_3" iconname="n/a"></string>
+  <string name="wi_moon_4" iconname="n/a"></string>
+  <string name="wi_moon_5" iconname="n/a"></string>
+  <string name="wi_moon_6" iconname="n/a"></string>
+  <string name="wi_moon_7" iconname="n/a"></string>
+  <string name="wi_moon_8" iconname="n/a"></string>
+  <string name="wi_moon_9" iconname="n/a"></string>
+  <string name="wi_moon_10" iconname="n/a"></string>
+  <string name="wi_moon_11" iconname="n/a"></string>
+  <string name="wi_moon_12" iconname="n/a"></string>
+  <string name="wi_moon_13" iconname="n/a"></string>
+  <string name="wi_moon_14" iconname="n/a"></string>
+  <string name="wi_moon_15" iconname="n/a"></string>
+  <string name="wi_moon_16" iconname="n/a"></string>
+  <string name="wi_moon_17" iconname="n/a"></string>
+  <string name="wi_moon_18" iconname="n/a"></string>
+  <string name="wi_moon_19" iconname="n/a"></string>
+  <string name="wi_moon_20" iconname="n/a"></string>
+  <string name="wi_moon_21" iconname="n/a"></string>
+  <string name="wi_moon_22" iconname="n/a"></string>
+  <string name="wi_moon_23" iconname="n/a"></string>
+  <string name="wi_moon_24" iconname="n/a"></string>
+  <string name="wi_moon_25" iconname="n/a"></string>
+  <string name="wi_moon_26" iconname="n/a"></string>
+  <string name="wi_moon_27" iconname="n/a"></string>
+  <string name="wi_time_1" iconname="n/a"></string>
+  <string name="wi_time_2" iconname="n/a"></string>
+  <string name="wi_time_3" iconname="n/a"></string>
+  <string name="wi_time_4" iconname="n/a"></string>
+  <string name="wi_time_5" iconname="n/a"></string>
+  <string name="wi_time_6" iconname="n/a"></string>
+  <string name="wi_time_7" iconname="n/a"></string>
+  <string name="wi_time_8" iconname="n/a"></string>
+  <string name="wi_time_9" iconname="n/a"></string>
+  <string name="wi_time_10" iconname="n/a"></string>
+  <string name="wi_time_11" iconname="n/a"></string>
+  <string name="wi_time_12" iconname="n/a"></string>
+  <string name="wi_direction_up" iconname="n/a"></string>
+  <string name="wi_direction_up_right" iconname="n/a"></string>
+  <string name="wi_direction_right" iconname="n/a"></string>
+  <string name="wi_direction_down_right" iconname="n/a"></string>
+  <string name="wi_direction_down" iconname="n/a"></string>
+  <string name="wi_direction_down_left" iconname="n/a"></string>
+  <string name="wi_direction_left" iconname="n/a"></string>
+  <string name="wi_direction_up_left" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_0" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_1" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_2" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_3" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_4" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_5" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_6" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_7" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_8" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_9" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_10" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_11" iconname="n/a"></string>
+  <string name="wi_wind_beaufort_12" iconname="n/a"></string>
+  <string name="wi_yahoo_0" iconname="tornado"></string>
+  <string name="wi_yahoo_1" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_2" iconname="hurricane"></string>
+  <string name="wi_yahoo_3" iconname="thunderstorm"></string>
+  <string name="wi_yahoo_4" iconname="thunderstorm"></string>
+  <string name="wi_yahoo_5" iconname="rain-mix"></string>
+  <string name="wi_yahoo_6" iconname="rain-mix"></string>
+  <string name="wi_yahoo_7" iconname="rain-mix"></string>
+  <string name="wi_yahoo_8" iconname="hail"></string>
+  <string name="wi_yahoo_9" iconname="showers"></string>
+  <string name="wi_yahoo_10" iconname="hail"></string>
+  <string name="wi_yahoo_11" iconname="showers"></string>
+  <string name="wi_yahoo_12" iconname="showers"></string>
+  <string name="wi_yahoo_13" iconname="snow"></string>
+  <string name="wi_yahoo_14" iconname="day-snow"></string>
+  <string name="wi_yahoo_15" iconname="snow-wind"></string>
+  <string name="wi_yahoo_16" iconname="snow"></string>
+  <string name="wi_yahoo_17" iconname="hail"></string>
+  <string name="wi_yahoo_18" iconname="rain-mix"></string>
+  <string name="wi_yahoo_19" iconname="dust"></string>
+  <string name="wi_yahoo_20" iconname="fog"></string>
+  <string name="wi_yahoo_21" iconname="windy"></string>
+  <string name="wi_yahoo_22" iconname="smoke"></string>
+  <string name="wi_yahoo_23" iconname="strong-wind"></string>
+  <string name="wi_yahoo_24" iconname="strong-wind"></string>
+  <string name="wi_yahoo_25" iconname="snowflake-cold"></string>
+  <string name="wi_yahoo_26" iconname="cloudy"></string>
+  <string name="wi_yahoo_27" iconname="night-cloudy"></string>
+  <string name="wi_yahoo_28" iconname="day-cloudy"></string>
+  <string name="wi_yahoo_29" iconname="night-cloudy"></string>
+  <string name="wi_yahoo_30" iconname="day-cloudy"></string>
+  <string name="wi_yahoo_31" iconname="night-clear"></string>
+  <string name="wi_yahoo_32" iconname="day-sunny"></string>
+  <string name="wi_yahoo_33" iconname="night-partly-cloudy"></string>
+  <string name="wi_yahoo_34" iconname="day-sunny-overcast"></string>
+  <string name="wi_yahoo_35" iconname="rain-mix"></string>
+  <string name="wi_yahoo_36" iconname="hot"></string>
+  <string name="wi_yahoo_37" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_38" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_39" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_40" iconname="showers"></string>
+  <string name="wi_yahoo_41" iconname="snow-wind"></string>
+  <string name="wi_yahoo_42" iconname="snow"></string>
+  <string name="wi_yahoo_43" iconname="snow-wind"></string>
+  <string name="wi_yahoo_44" iconname="day-sunny-overcast"></string>
+  <string name="wi_yahoo_45" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_46" iconname="snow"></string>
+  <string name="wi_yahoo_47" iconname="day-storm-showers"></string>
+  <string name="wi_yahoo_3200" iconname="stars"></string>
+  <string name="wi_forecast_io_clear_day" iconname="day-sunny"></string>
+  <string name="wi_forecast_io_clear_night" iconname="night-clear"></string>
+  <string name="wi_forecast_io_rain" iconname="rain"></string>
+  <string name="wi_forecast_io_snow" iconname="snow"></string>
+  <string name="wi_forecast_io_sleet" iconname="sleet"></string>
+  <string name="wi_forecast_io_wind" iconname="strong-wind"></string>
+  <string name="wi_forecast_io_fog" iconname="fog"></string>
+  <string name="wi_forecast_io_cloudy" iconname="cloudy"></string>
+  <string name="wi_forecast_io_partly_cloudy_day" iconname="day-cloudy"></string>
+  <string name="wi_forecast_io_partly_cloudy_night" iconname="night-cloudy"></string>
+  <string name="wi_forecast_io_hail" iconname="hail"></string>
+  <string name="wi_forecast_io_thunderstorm" iconname="thunderstorm"></string>
+  <string name="wi_forecast_io_tornado" iconname="tornado"></string>
+  <string name="wi_wmo4680_0" iconname="thermometer"></string>
+  <string name="wi_wmo4680_00" iconname="thermometer"></string>
+  <string name="wi_wmo4680_1" iconname="cloudy"></string>
+  <string name="wi_wmo4680_01" iconname="cloudy"></string>
+  <string name="wi_wmo4680_2" iconname="thermometer"></string>
+  <string name="wi_wmo4680_02" iconname="thermometer"></string>
+  <string name="wi_wmo4680_3" iconname="cloudy"></string>
+  <string name="wi_wmo4680_03" iconname="cloudy"></string>
+  <string name="wi_wmo4680_4" iconname="fog"></string>
+  <string name="wi_wmo4680_04" iconname="fog"></string>
+  <string name="wi_wmo4680_5" iconname="fog"></string>
+  <string name="wi_wmo4680_05" iconname="fog"></string>
+  <string name="wi_wmo4680_10" iconname="fog"></string>
+  <string name="wi_wmo4680_11" iconname="fog"></string>
+  <string name="wi_wmo4680_12" iconname="lightning"></string>
+  <string name="wi_wmo4680_18" iconname="strong-wind"></string>
+  <string name="wi_wmo4680_20" iconname="fog"></string>
+  <string name="wi_wmo4680_21" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_22" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_23" iconname="rain"></string>
+  <string name="wi_wmo4680_24" iconname="snow"></string>
+  <string name="wi_wmo4680_25" iconname="hail"></string>
+  <string name="wi_wmo4680_26" iconname="thunderstorm"></string>
+  <string name="wi_wmo4680_27" iconname="dust"></string>
+  <string name="wi_wmo4680_28" iconname="dust"></string>
+  <string name="wi_wmo4680_29" iconname="dust"></string>
+  <string name="wi_wmo4680_30" iconname="fog"></string>
+  <string name="wi_wmo4680_31" iconname="fog"></string>
+  <string name="wi_wmo4680_32" iconname="fog"></string>
+  <string name="wi_wmo4680_33" iconname="fog"></string>
+  <string name="wi_wmo4680_34" iconname="fog"></string>
+  <string name="wi_wmo4680_35" iconname="fog"></string>
+  <string name="wi_wmo4680_40" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_41" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_42" iconname="rain"></string>
+  <string name="wi_wmo4680_43" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_44" iconname="rain"></string>
+  <string name="wi_wmo4680_45" iconname="hail"></string>
+  <string name="wi_wmo4680_46" iconname="hail"></string>
+  <string name="wi_wmo4680_47" iconname="snow"></string>
+  <string name="wi_wmo4680_48" iconname="snow"></string>
+  <string name="wi_wmo4680_50" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_51" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_52" iconname="rain"></string>
+  <string name="wi_wmo4680_53" iconname="rain"></string>
+  <string name="wi_wmo4680_54" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_55" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_56" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_57" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_58" iconname="rain"></string>
+  <string name="wi_wmo4680_60" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_61" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_62" iconname="rain"></string>
+  <string name="wi_wmo4680_63" iconname="rain"></string>
+  <string name="wi_wmo4680_64" iconname="hail"></string>
+  <string name="wi_wmo4680_65" iconname="hail"></string>
+  <string name="wi_wmo4680_66" iconname="hail"></string>
+  <string name="wi_wmo4680_67" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_68" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_70" iconname="snow"></string>
+  <string name="wi_wmo4680_71" iconname="snow"></string>
+  <string name="wi_wmo4680_72" iconname="snow"></string>
+  <string name="wi_wmo4680_73" iconname="snow"></string>
+  <string name="wi_wmo4680_74" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_75" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_76" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_77" iconname="snow"></string>
+  <string name="wi_wmo4680_78" iconname="snowflake-cold"></string>
+  <string name="wi_wmo4680_80" iconname="rain"></string>
+  <string name="wi_wmo4680_81" iconname="sprinkle"></string>
+  <string name="wi_wmo4680_82" iconname="rain"></string>
+  <string name="wi_wmo4680_83" iconname="rain"></string>
+  <string name="wi_wmo4680_84" iconname="storm-showers"></string>
+  <string name="wi_wmo4680_85" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_86" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_87" iconname="rain-mix"></string>
+  <string name="wi_wmo4680_89" iconname="hail"></string>
+  <string name="wi_wmo4680_90" iconname="lightning"></string>
+  <string name="wi_wmo4680_91" iconname="storm-showers"></string>
+  <string name="wi_wmo4680_92" iconname="thunderstorm"></string>
+  <string name="wi_wmo4680_93" iconname="thunderstorm"></string>
+  <string name="wi_wmo4680_94" iconname="lightning"></string>
+  <string name="wi_wmo4680_95" iconname="thunderstorm"></string>
+  <string name="wi_wmo4680_96" iconname="thunderstorm"></string>
+  <string name="wi_wmo4680_99" iconname="tornado"></string>
+</resources>
