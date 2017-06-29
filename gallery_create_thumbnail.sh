@@ -1,6 +1,7 @@
 #!/bin/bash
 
 srcfile="$1"
+tmpfile=~/conky-sidebar/cache/gallery_tmp.png
 tgtfile=~/conky-sidebar/cache/gallery.png
 
 if [ -f "$srcfile" ]; then
@@ -14,7 +15,14 @@ if [ -f "$srcfile" ]; then
     #landscape
     gravity=center
   fi
-  convert -regard-warnings "$srcfile" -resize 180 -background none -gravity $gravity -extent 180x135 PNG24:$tgtfile
+  if [ -f "$tmpfile" ]; then
+    rm -f "$tmpfile"
+  fi
+  convert -regard-warnings "$srcfile" -resize 180 -background none -gravity $gravity -extent 180x135 PNG24:$tmpfile
+  if [ -f "$tgtfile" ]; then
+    rm -f "$tgtfile"
+  fi
+  mv "$tmpfile" "$tgtfile"
   if [ $? -ne 0 ]; then
     echo $srcfile >> /var/log/conky.log
   fi

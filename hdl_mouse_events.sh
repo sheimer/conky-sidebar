@@ -1,8 +1,8 @@
 #!/bin/bash
 
 winid=$1
-logfile=~/conky/cache/gallery.log
-curfolder=~/conky/cache/gallery.list
+logfile=~/conky-sidebar/cache/gallery.log
+listfile=~/conky-sidebar/cache/gallery.list
 
 function hdl_mouse_event {
   evt_line=$1
@@ -24,19 +24,26 @@ function hdl_mouse_event {
       if [ "$button" == 'button1' ];then
         file=$(tail -n 1 "$logfile")
 
+        rm -f "$listfile".tmp
+        find "$(dirname "$file")"/ -type f 2>&1 > "$listfile".tmp
+        sort -o "$listfile".tmp "$listfile".tmp
+
         #eog has scrollbars in fullscreen while zoomed
         #eog -fgw "$file" 2>&1 &
 
         #gthumb not allowing "only one instance" -.-
         #gthumb -f "$file" 2>&1 &
 
-        ls -d1 "$(dirname "$file")"/* > "$curfolder"
         #feh works fine, but keyboard has to be remapped in ~/.config/feh/keys
         if pgrep -x feh > /dev/null; then
           killall feh
         fi
+
+        rm "$listfile" && mv "$listfile".tmp "$listfile"
+
+        filelist=$listfile
         #filelist=$logfile
-        filelist=$curfolder
+
         feh -ZF --action "nautilus %F" --zoom fill -f "$filelist" --start-at "$file" 2>&1 >> /var/log/conky.log &
         #feh -ZF --zoom fill "$file" 2>&1 >> /var/log/conky.log &
         echo "feh started with $file"
