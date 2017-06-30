@@ -1,8 +1,17 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+if [ ! -f ./conky-sidebar.conf ]; then
+  echo "please mv conky-sidebar.conf.sample to conky-sidebar.conf and configure it"
+  exit 1
+else
+  source ./conky-sidebar.conf
+fi
+
 winid=$1
-logfile=~/conky-sidebar/cache/gallery.log
-listfile=~/conky-sidebar/cache/gallery.list
+logfile="$conkydir"/cache/gallery.log
+listfile="$conkydir"/cache/gallery.list
 
 function hdl_mouse_event {
   evt_line=$1
@@ -37,9 +46,13 @@ function hdl_mouse_event {
         #feh works fine, but keyboard has to be remapped in ~/.config/feh/keys
         if pgrep -x feh > /dev/null; then
           killall feh
+          sleep 1
         fi
 
-        rm "$listfile" && mv "$listfile".tmp "$listfile"
+        if [ -f "$listfile" ]; then
+          rm "$listfile"
+        fi
+        mv "$listfile".tmp "$listfile"
 
         filelist=$listfile
         #filelist=$logfile

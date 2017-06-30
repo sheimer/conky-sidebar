@@ -1,76 +1,85 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+if [ ! -f ./conky-sidebar.conf ]; then
+  echo "please mv conky-sidebar.conf.sample to conky-sidebar.conf and configure it"
+  exit 1
+else
+  source ./conky-sidebar.conf
+fi
+
 export LC_NUMERIC="en_US.UTF-8"
 
-FILE=~/conky-sidebar/cache/weather.json
+file="$conkydir"/cache/weather.json
 
 case $1 in
   icon_now)
-    DT=$(jq -r '.dt' $FILE)
-    SUNRISE=$(jq -r '.sys.sunrise' $FILE)
-    SUNSET=$(jq -r '.sys.sunset' $FILE)
-    if [ "$DT" -gt "$SUNRISE" ] && [ "$DT" -lt "$SUNSET" ]; then
-      DAYNIGHT='day_'
+    dt=$(jq -r '.dt' $file)
+    sunrise=$(jq -r '.sys.sunrise' $file)
+    sunset=$(jq -r '.sys.sunset' $file)
+    if [ "$dt" -gt "$sunrise" ] && [ "$dt" -lt "$sunset" ]; then
+      daynight='day_'
     else
-      DAYNIGHT='night_'
+      daynight='night_'
     fi
-    ~/conky-sidebar/owm2utf8.sh 'wi_owm_'$DAYNIGHT$(jq -r '.weather[0].id' $FILE)
+    "$conkydir"/owm2utf8.sh 'wi_owm_'$daynight$(jq -r '.weather[0].id' $file)
     ;;
   temp_now)
-    printf "%.0f"  $(jq -r '.main.temp' $FILE)
+    printf "%.0f"  $(jq -r '.main.temp' $file)
     ;;
   day)
     echo -n $(date -d +${2}day +%^a)
     ;;
   icon)
-    FILE=~/conky-sidebar/cache/forecast.json
-    ~/conky-sidebar/owm2utf8.sh 'wi_owm_'$(jq -r '.list['$2'].weather[0].id' $FILE)
+    file="$conkydir"/cache/forecast.json
+    "$conkydir"/owm2utf8.sh 'wi_owm_'$(jq -r '.list['$2'].weather[0].id' $file)
     ;;
   temp_min)
-    FILE=~/conky-sidebar/cache/forecast.json
-    printf "%.0f" $(jq -r '.list['$2'].temp.min' $FILE)
+    file="$conkydir"/cache/forecast.json
+    printf "%.0f" $(jq -r '.list['$2'].temp.min' $file)
     ;;
   temp_max)
-    FILE=~/conky-sidebar/cache/forecast.json
-    printf "%.0f" $(jq -r '.list['$2'].temp.max' $FILE)
+    file="$conkydir"/cache/forecast.json
+    printf "%.0f" $(jq -r '.list['$2'].temp.max' $file)
     ;;
   pressure)
-    echo -n $(jq -r '.main.pressure' $FILE)
+    echo -n $(jq -r '.main.pressure' $file)
     ;;
   humidity)
-    echo -n $(jq -r '.main.humidity' $FILE)
+    echo -n $(jq -r '.main.humidity' $file)
     ;;
   wind_speed)
-    SPEED=$(echo $(jq -r '.wind.speed' $FILE)*3.6 | bc)
-    printf "%.0f" $SPEED
+    speed=$(echo $(jq -r '.wind.speed' $file)*3.6 | bc)
+    printf "%.0f" $speed
     ;;
   wind_degree)
-    echo -n $(jq -r '.wind.deg' $FILE)
+    echo -n $(jq -r '.wind.deg' $file)
     ;;
   wind_degree_icon)
-    DEGREE=$(jq -r '.wind.deg' $FILE)
-    if [ "$DEGREE" == null ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_na'
-    elif [ "$DEGREE" -gt 337 ] || [ "$DEGREE" -lt 23 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_up'
-    elif [ "$DEGREE" -lt 68 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_up_right'
-    elif [ "$DEGREE" -lt 113 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_right'
-    elif [ "$DEGREE" -lt 158 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_down_right'
-    elif [ "$DEGREE" -lt 203 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_down'
-    elif [ "$DEGREE" -lt 248 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_down_left'
-    elif [ "$DEGREE" -lt 293 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_left'
-    elif [ "$DEGREE" -lt 338 ]; then
-      ~/conky-sidebar/owm2utf8.sh 'wi_direction_up_left'
+    degree=$(jq -r '.wind.deg' $file)
+    if [ "$degree" == null ]; then
+      "$conkydir"/owm2utf8.sh 'wi_na'
+    elif [ "$degree" -gt 337 ] || [ "$degree" -lt 23 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_up'
+    elif [ "$degree" -lt 68 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_up_right'
+    elif [ "$degree" -lt 113 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_right'
+    elif [ "$degree" -lt 158 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_down_right'
+    elif [ "$degree" -lt 203 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_down'
+    elif [ "$degree" -lt 248 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_down_left'
+    elif [ "$degree" -lt 293 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_left'
+    elif [ "$degree" -lt 338 ]; then
+      "$conkydir"/owm2utf8.sh 'wi_direction_up_left'
     fi
     ;;
   description)
-    echo -n "$(jq -r '.weather[0].description' $FILE)" #"|$(jq -r '.weather[0].id' $FILE)"
+    echo -n "$(jq -r '.weather[0].description' $file)" #"|$(jq -r '.weather[0].id' $file)"
     ;;
   *)
     echo $"Usage: $0 {icon_now|temp_now|day {0|1|2|...}|icon {0|1|2|...}|temp_min {0|1|2|...}|temp_max {0|1|2|...}|pressure|humidity|wind_speed|wind_degree|wind_degree_icon|description}"

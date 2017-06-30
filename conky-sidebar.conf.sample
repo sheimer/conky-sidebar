@@ -1,0 +1,7 @@
+conkydir=/home/<your home>/conky-sidebar
+gallery=/path/to/your/images
+
+owmcity=''
+owmtoken=''
+owmlang=''
+

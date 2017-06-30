@@ -1,6 +1,16 @@
 #!/bin/bash
 
-conkydir=/home/yourname/conky-sidebar
+cd "$(dirname "$0")"
+
+if [ ! -f ./conky-sidebar.conf ]; then
+  echo "please mv conky-sidebar.conf.sample to conky-sidebar.conf and configure it"
+  exit 1
+else
+  source ./conky-sidebar.conf
+fi
+
+# kill mouse handler
+proc=$(ps aux | grep hdl_mouse_events | grep -v grep | tr -s " " | cut -d" " -f2); [[ "$proc" =~ ^.+$ ]] && echo $proc | xargs kill
 
 # kill conky
 if pgrep -x conky > /dev/null; then
@@ -8,9 +18,6 @@ if pgrep -x conky > /dev/null; then
   killall conky
   echo "killed" >> /var/log/conky.log
 fi
-
-# kill mouse handler
-proc=$(ps aux | grep hdl_mouse_events | grep -v grep | tr -s " " | cut -d" " -f2); [[ "$proc" =~ ^.+$ ]] && echo $proc | xargs kill
 
 sleep 2
 conky -c "${conkydir}/conky.conf"  >> /var/log/conky.log 2>&1 &
@@ -27,6 +34,6 @@ while [ "$winid" == "" ]; do
   sleep 0.1
   winid=$(wmctrl -l | grep hidden_conky_gallery | cut -d" " -f1)
 done
-${conkydir}/hdl_mouse_events.sh $winid >> /var/log/conky.log 2>&1 &
+"${conkydir}"/hdl_mouse_events.sh $winid >> /var/log/conky.log 2>&1 &
 
 exit

@@ -1,0 +1,2 @@
+SUBSYSTEM=="drm", ACTION=="change", RUN+="/etc/dell/dock.sh"
+

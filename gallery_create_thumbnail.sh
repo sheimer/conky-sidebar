@@ -1,8 +1,17 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+if [ ! -f ./conky-sidebar.conf ]; then
+  echo "please mv conky-sidebar.conf.sample to conky-sidebar.conf and configure it"
+  exit 1
+else
+  source ./conky-sidebar.conf
+fi
+
 srcfile="$1"
-tmpfile=~/conky-sidebar/cache/gallery_tmp.png
-tgtfile=~/conky-sidebar/cache/gallery.png
+tmpfile="$conkydir"/cache/gallery_tmp.png
+tgtfile="$conkydir"/cache/gallery.png
 
 if [ -f "$srcfile" ]; then
   size=$(identify -ping -format '%wx%h' "$srcfile")
