@@ -9,6 +9,19 @@ else
   source ./conky-sidebar.conf
 fi
 
+if [ ! -d "cache" ];then
+  mkdir cache
+  touch cache/forecast.json
+  touch cache/weather.json
+  touch cache/gallery.log
+fi
+
+# kill feh, since otherwise conky-gallery-display is broken
+if pgrep -x feh > /dev/null; then
+  killall feh
+  sleep 1
+fi
+
 # kill mouse handler
 proc=$(ps aux | grep hdl_mouse_events | grep -v grep | tr -s " " | cut -d" " -f2); [[ "$proc" =~ ^.+$ ]] && echo $proc | xargs kill
 
