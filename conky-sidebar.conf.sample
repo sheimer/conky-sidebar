@@ -1,5 +1,6 @@
 conkydir=/home/<your home>/conky-sidebar
 gallery=/path/to/your/images
+gallery_collect=/path/to/where/feh/should/save/when/you/save
 
 owmcity=''
 owmtoken=''

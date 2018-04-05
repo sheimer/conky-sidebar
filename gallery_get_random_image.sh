@@ -20,8 +20,8 @@ fi
 echo "$list" | shuf | while read file; do
   file="$file"
   data=$(file -b "$file")
-  if [ $(echo $data | awk '{print $2}') == 'image' ]; then
-    /home/hidden/conky-sidebar/gallery_create_thumbnail.sh "$file"
+  if [ $(echo $data | awk '{print $2}') == 'image' -a `identify "$file" | wc -l` -eq 1 ]; then
+    "$conkydir"/gallery_create_thumbnail.sh "$file"
     echo "$file" >> "$logfile"
     tail -n 100 "$logfile" > "${logfile}.tmp" && mv "${logfile}.tmp" "$logfile"
     break

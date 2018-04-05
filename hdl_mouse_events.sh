@@ -57,6 +57,7 @@ function hdl_mouse_event {
         filelist=$listfile
         #filelist=$logfile
 
+        cd "$gallery_collect"
         feh -ZF --action "nautilus %F" --zoom fill -f "$filelist" --start-at "$file" 2>&1 >> /var/log/conky.log &
         #feh -ZF --zoom fill "$file" 2>&1 >> /var/log/conky.log &
         echo "feh started with $file"

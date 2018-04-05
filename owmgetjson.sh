@@ -13,10 +13,12 @@ export LC_NUMERIC="en_US.UTF-8"
 
 case $1 in
   weather)
-    curl -s "api.openweathermap.org/data/2.5/weather?q=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/weather.json"
+    #curl -s "api.openweathermap.org/data/2.5/weather?q=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/weather.json"
+    curl -s "api.openweathermap.org/data/2.5/weather?id=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/weather.json"
     ;;
   forecast)
-    curl -s "api.openweathermap.org/data/2.5/forecast/daily?q=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/forecast.json"
+    #curl -s "api.openweathermap.org/data/2.5/forecast/daily?q=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/forecast.json"
+    curl -s "api.openweathermap.org/data/2.5/forecast/daily?id=${owmcity}&units=metric&appid=${owmtoken}&lang=${owmlang}" -o "${conkydir}/cache/forecast.json"
     ;;
   *)
     echo $"Usage: $0 {weather|forecast}"
